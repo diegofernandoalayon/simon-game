@@ -10,6 +10,14 @@ $(document).keypress(function () {
     inicio = true;
   }
 });
+$("#level-title").click(function () {
+  if (!inicio) {
+    $("#level-title").text("Level " + nivel);
+    nextSequence();
+    inicio = true;
+  }
+});
+
 //funcion de click
 $(".btn").click(function () {
   var colorElegidoUsuario = $(this).attr("id");
