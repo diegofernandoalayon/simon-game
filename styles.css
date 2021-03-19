@@ -9,6 +9,9 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
+.texto_responsivo:before{
+content:attr(data-desktoptext);
+}
 
 .container {
   display: block;
@@ -51,4 +54,32 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+.colum{
+  width:100%;
+}
+@media screen and (max-width: 1120px){
+  .container{
+    display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  }
+  .btn {
+    margin:  4% ;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  .row{
+    width: 100%;
+  }
+  .texto_responsivo:before{
+    content: attr(data-phonetext);
+  }
+  
+  
 }
